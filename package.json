@@ -1,0 +1,40 @@
+{
+  "name": "masjid-express",
+  "version": "1.0.0",
+  "description": "sample express app to use for projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "lint": "eslint ./",
+    "lint-watch": "esw ../express-app -w",
+    "create-db": "node ./migration/create-db.js",
+    "create-tables": "node ./migration/create-tables.js",
+    "insert-data": "node ./migration/insert-data.js",
+    "migrate": "npm run create-db && npm run create-tables",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdshoeb01/express-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdshoeb01/express-app/issues"
+  },
+  "homepage": "https://github.com/mdshoeb01/express-app#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.5",
+    "eslint-watch": "^5.0.1",
+    "express": "^4.16.4",
+    "mysql2": "^1.6.5",
+    "nodemon": "^1.18.10",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  }
+}
