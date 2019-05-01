@@ -4,7 +4,8 @@
   "description": "sample express app to use for projects",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js",
+    "start": "pm2 start server.js --name health-care-node",
+    "status": "pm2 status",
     "lint": "eslint ./",
     "lint-watch": "esw ../express-app -w",
     "create-db": "node ./migration/create-db.js",
@@ -30,6 +31,7 @@
     "express": "^4.16.4",
     "mysql2": "^1.6.5",
     "nodemon": "^1.18.10",
+    "pm2": "^3.5.0",
     "winston": "^3.2.1"
   },
   "devDependencies": {
