@@ -12,7 +12,9 @@
     "create-tables": "node ./migration/create-tables.js",
     "insert-data": "node ./migration/insert-data.js",
     "migrate": "npm run create-db && npm run create-tables",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "list": "pm2 list",
+    "kill": "pm2 kill"
   },
   "repository": {
     "type": "git",
@@ -29,7 +31,7 @@
     "cors": "^2.8.5",
     "eslint-watch": "^5.0.1",
     "express": "^4.16.4",
-    "mysql2": "^1.6.5",
+    "mysql2": "^2.3.3",
     "nodemon": "^1.18.10",
     "pm2": "^3.5.0",
     "winston": "^3.2.1"

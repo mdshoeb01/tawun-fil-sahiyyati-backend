@@ -1,0 +1,16 @@
+version: '3.3'
+
+services:
+  node: 
+    container_name: node-health
+    hostname: node-health
+    image: mdshoeb01/node-health
+    build: 
+      context: .
+    ports:
+      - 4020:4020
+
+networks:
+  default:
+    name: health-network
+    external: true

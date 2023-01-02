@@ -1,5 +1,5 @@
 module.exports = {
-  host: 'localhost',
-  user: 'rizwan',
-  password: 'rizwan',
+  host: 'www2',
+  user: 'root',
+  password: 'password',
 };
